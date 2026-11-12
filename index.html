@@ -481,6 +481,60 @@ footer {
     </div>
 </section>
 
+<!-- CUSTOMER FEEDBACK -->
+<section id="feedback" style="background:#e9f3f8; padding:50px 8%; text-align:center;">
+    <h2 class="section-title">SHARE YOUR FEEDBACK</h2>
+
+    <p class="subtitle">
+        Help us improve your digital ordering experience!
+    </p>
+
+    <form name="website-feedback"
+          method="POST"
+          data-netlify="true"
+          netlify-honeypot="bot-field">
+
+        <input type="hidden" name="form-name"
+               value="website-feedback">
+
+        <p hidden>
+            <label>Leave this empty:
+                <input name="bot-field">
+            </label>
+        </p>
+
+        <input type="text"
+               name="visitor-name"
+               placeholder="Your name (optional)"
+               style="padding:13px; width:100%; max-width:500px; margin:8px;">
+
+        <br>
+
+        <select name="rating"
+                required
+                style="padding:13px; width:100%; max-width:500px; margin:8px;">
+            <option value="">Rate your experience</option>
+            <option>Very Helpful</option>
+            <option>Helpful</option>
+            <option>Needs Improvement</option>
+        </select>
+
+        <br>
+
+        <textarea name="comments"
+                  required
+                  placeholder="Write your feedback or suggestions here..."
+                  style="padding:13px; width:100%; max-width:500px; height:120px; margin:8px;"></textarea>
+
+        <br>
+
+        <button type="submit"
+                style="padding:14px 30px; background:#102f50; color:white; border:0; border-radius:25px; cursor:pointer;">
+            SUBMIT FEEDBACK
+        </button>
+    </form>
+</section>
+
 <footer>
     <h3>SMART DIGITAL SERVICES</h3>
     <p>Making digital ordering simpler, smarter, and more convenient.</p>
