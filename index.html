@@ -1,0 +1,491 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Smart Digital Services</title>
+
+<style>
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    scroll-behavior: smooth;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background: #f5f8fc;
+    color: #263445;
+    line-height: 1.7;
+}
+
+header {
+    background: #102f50;
+    color: white;
+    padding: 18px 7%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: sticky;
+    top: 0;
+    z-index: 100;
+}
+
+.logo {
+    font-size: 20px;
+    font-weight: bold;
+}
+
+nav a {
+    color: white;
+    text-decoration: none;
+    margin-left: 18px;
+    font-size: 14px;
+}
+
+nav a:hover {
+    color: #77d5e8;
+}
+
+.hero {
+    background: linear-gradient(120deg, #102f50, #167d9c);
+    color: white;
+    padding: 100px 8%;
+    text-align: center;
+}
+
+.hero h1 {
+    font-size: 42px;
+    line-height: 1.2;
+    margin-bottom: 20px;
+}
+
+.hero p {
+    max-width: 750px;
+    margin: auto;
+    font-size: 17px;
+}
+
+.btn {
+    display: inline-block;
+    margin-top: 28px;
+    padding: 13px 25px;
+    background: #ffffff;
+    color: #12476b;
+    text-decoration: none;
+    border-radius: 30px;
+    font-weight: bold;
+}
+
+.btn:hover {
+    background: #d9f4fa;
+}
+
+section {
+    padding: 65px 8%;
+}
+
+.section-title {
+    text-align: center;
+    color: #123e60;
+    font-size: 30px;
+    margin-bottom: 12px;
+}
+
+.subtitle {
+    text-align: center;
+    color: #68798a;
+    margin-bottom: 35px;
+}
+
+.grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+    gap: 20px;
+}
+
+.card {
+    background: white;
+    padding: 25px;
+    border-radius: 13px;
+    box-shadow: 0 3px 12px rgba(0,0,0,0.06);
+}
+
+.card h3 {
+    color: #167d9c;
+    margin-bottom: 10px;
+}
+
+.card .emoji {
+    font-size: 32px;
+    margin-bottom: 10px;
+}
+
+.ways {
+    background: #e9f3f8;
+}
+
+.payment {
+    text-align: center;
+}
+
+.payment-list {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 15px;
+}
+
+.payment-item {
+    background: white;
+    padding: 18px 30px;
+    border-radius: 10px;
+    font-weight: bold;
+    color: #167d9c;
+    box-shadow: 0 2px 8px #00000010;
+}
+
+.problems {
+    background: #f0f5fa;
+}
+
+.problem-group {
+    background: white;
+    padding: 25px;
+    margin-bottom: 20px;
+    border-radius: 12px;
+    box-shadow: 0 3px 10px #0000000b;
+}
+
+.problem-group h3 {
+    color: #123e60;
+    margin-bottom: 15px;
+}
+
+details {
+    border-top: 1px solid #e5eaf0;
+    padding: 13px 0;
+}
+
+summary {
+    cursor: pointer;
+    font-weight: bold;
+    color: #287b9b;
+}
+
+details p {
+    padding: 10px 15px;
+    color: #536577;
+}
+
+footer {
+    background: #102f50;
+    color: white;
+    text-align: center;
+    padding: 30px;
+}
+
+@media(max-width: 700px) {
+    header {
+        flex-direction: column;
+        gap: 12px;
+    }
+
+    nav {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        gap: 10px;
+    }
+
+    nav a {
+        margin: 0;
+        font-size: 12px;
+    }
+
+    .hero {
+        padding: 75px 6%;
+    }
+
+    .hero h1 {
+        font-size: 32px;
+    }
+
+    section {
+        padding: 50px 6%;
+    }
+}
+</style>
+</head>
+
+<body>
+
+<header>
+    <div class="logo">SMART DIGITAL SERVICES</div>
+    <nav>
+        <a href="#home">Home</a>
+        <a href="#benefits">Benefits</a>
+        <a href="#ordering">Ordering</a>
+        <a href="#payment">Payments</a>
+        <a href="#problems">Solutions</a>
+    </nav>
+</header>
+
+<!-- HOME -->
+<div class="hero" id="home">
+    <h1>Discover the Convenience of Smart Digital Services</h1>
+
+    <p>
+        Skip the traditional ordering process and enjoy
+        a convenient, simple, and modern way of ordering
+        through self-service kiosks and mobile applications.
+    </p>
+
+    <a href="#benefits" class="btn">DISCOVER THE EASE OF DIGITAL ORDERING</a>
+</div>
+
+<!-- BENEFITS -->
+<section id="benefits">
+    <h2 class="section-title">WHY GO DIGITAL?</h2>
+    <p class="subtitle">
+        Discover how digital ordering can improve your restaurant experience.
+    </p>
+
+    <div class="grid">
+        <div class="card">
+            <div class="emoji">🛒</div>
+            <h3>Convenience</h3>
+            <p>Enjoy an alternative to traditional counter ordering.</p>
+        </div>
+
+        <div class="card">
+            <div class="emoji">⏱️</div>
+            <h3>Time Efficiency</h3>
+            <p>Make ordering more convenient and accessible.</p>
+        </div>
+
+        <div class="card">
+            <div class="emoji">📱</div>
+            <h3>Flexibility</h3>
+            <p>Choose how and where to access available digital ordering services.</p>
+        </div>
+
+        <div class="card">
+            <div class="emoji">🍔</div>
+            <h3>Personalization</h3>
+            <p>Select and customize meals according to your preferences.</p>
+        </div>
+
+        <div class="card">
+            <div class="emoji">🌐</div>
+            <h3>Accessibility</h3>
+            <p>Explore restaurant menus and promotions through digital platforms.</p>
+        </div>
+    </div>
+</section>
+
+<!-- ORDERING METHODS -->
+<section class="ways" id="ordering">
+    <h2 class="section-title">TWO WAYS TO ORDER SMARTER</h2>
+    <p class="subtitle">
+        Explore the different ways to enjoy digital ordering.
+    </p>
+
+    <div class="grid">
+        <div class="card">
+            <div class="emoji">🖥️</div>
+            <h3>1. Self-Service Kiosks</h3>
+            <p>
+                Enjoy interactive touchscreen ordering,
+                digital menus, meal customization,
+                and available payment options.
+            </p>
+        </div>
+
+        <div class="card">
+            <div class="emoji">📲</div>
+            <h3>2. Mobile Ordering Applications</h3>
+            <p>
+                Access restaurant menus, explore available
+                promotions, customize food selections,
+                and enjoy mobile-based ordering.
+            </p>
+        </div>
+    </div>
+</section>
+
+<!-- PAYMENT -->
+<section class="payment" id="payment">
+    <h2 class="section-title">PAYMENT OPTIONS</h2>
+    <p class="subtitle">
+        Depending on the restaurant, available payment methods may include:
+    </p>
+
+    <div class="payment-list">
+        <div class="payment-item">GCash</div>
+        <div class="payment-item">Maya</div>
+        <div class="payment-item">Debit and Credit Cards</div>
+        <div class="payment-item">QR Ph</div>
+    </div>
+</section>
+
+<!-- PROBLEMS AND SOLUTIONS -->
+<section class="problems" id="problems">
+    <h2 class="section-title">DIGITAL ORDERING: PROBLEMS & SOLUTIONS</h2>
+
+    <p class="subtitle">
+        Learn how to handle common problems when using digital ordering services.
+        Click each problem to view its suggested solution.
+    </p>
+
+    <div class="problem-group">
+        <h3>1. Payment and Transaction Problems</h3>
+
+        <details>
+            <summary>Payment was declined.</summary>
+            <p>Check your available balance and payment details. Try another accepted payment method if necessary.</p>
+        </details>
+
+        <details>
+            <summary>QR payment is not scanning.</summary>
+            <p>Adjust your phone's brightness and position it properly in front of the scanner.</p>
+        </details>
+
+        <details>
+            <summary>Card payment is unsuccessful.</summary>
+            <p>Check whether the card is valid and has sufficient funds. Ask staff to check the payment terminal if the issue continues.</p>
+        </details>
+
+        <details>
+            <summary>Payment is still pending.</summary>
+            <p>Check the transaction status in your payment application. Do not repeat the payment until its status is confirmed.</p>
+        </details>
+    </div>
+
+    <div class="problem-group">
+        <h3>2. System Performance Problems</h3>
+
+        <details>
+            <summary>Kiosk screen is lagging.</summary>
+            <p>Wait for the current selection to respond before tapping again.</p>
+        </details>
+
+        <details>
+            <summary>Touchscreen is not responding.</summary>
+            <p>Avoid repeatedly pressing the screen. Ask restaurant staff to check the kiosk.</p>
+        </details>
+
+        <details>
+            <summary>Mobile application is running slowly.</summary>
+            <p>Check your internet connection and close unnecessary applications before reopening the ordering app.</p>
+        </details>
+
+        <details>
+            <summary>Application suddenly crashes.</summary>
+            <p>Reopen the application and check your order history before placing another order.</p>
+        </details>
+
+        <details>
+            <summary>Menu is not loading.</summary>
+            <p>Check your internet connection if using a mobile app. For kiosk problems, ask staff for assistance.</p>
+        </details>
+    </div>
+
+    <div class="problem-group">
+        <h3>3. Order Accuracy Problems</h3>
+
+        <details>
+            <summary>Wrong food item is selected.</summary>
+            <p>Return to the menu and select the correct item before submitting the order.</p>
+        </details>
+
+        <details>
+            <summary>Ordered item becomes unavailable.</summary>
+            <p>Ask restaurant staff about available alternatives before proceeding.</p>
+        </details>
+
+        <details>
+            <summary>Duplicate items appear in the cart.</summary>
+            <p>Remove the extra item before confirming your purchase.</p>
+        </details>
+
+        <details>
+            <summary>Received food does not match the confirmed order.</summary>
+            <p>Present your receipt or order confirmation to restaurant staff and report the incorrect item.</p>
+        </details>
+
+        <details>
+            <summary>Wrong meal size is displayed.</summary>
+            <p>Review the selected size and correct it before submitting the order.</p>
+        </details>
+    </div>
+
+    <div class="problem-group">
+        <h3>4. Order Status and Update Problems</h3>
+
+        <details>
+            <summary>No order confirmation appears.</summary>
+            <p>Check your order history or receipt, if available. Ask staff to verify whether the order was received.</p>
+        </details>
+
+        <details>
+            <summary>Order is taking longer than expected.</summary>
+            <p>Present your order number to restaurant staff and ask about its status.</p>
+        </details>
+
+        <details>
+            <summary>No order notification is received.</summary>
+            <p>Check the application directly for updates, if the feature is available.</p>
+        </details>
+
+        <details>
+            <summary>Order is marked completed but has not been received.</summary>
+            <p>Show your order number or receipt to staff for verification.</p>
+        </details>
+
+        <details>
+            <summary>Incorrect order status is displayed.</summary>
+            <p>Ask restaurant staff to confirm the actual status of your order.</p>
+        </details>
+    </div>
+
+    <div class="problem-group">
+        <h3>5. Mobile Application Problems</h3>
+
+        <details>
+            <summary>Unable to log in.</summary>
+            <p>Check your username and password. Use the application's password recovery option if needed.</p>
+        </details>
+
+        <details>
+            <summary>Application will not open.</summary>
+            <p>Check your internet connection and update the application if an update is available.</p>
+        </details>
+
+        <details>
+            <summary>Cart suddenly becomes empty.</summary>
+            <p>Check your order history before rebuilding or submitting the order.</p>
+        </details>
+
+        <details>
+            <summary>Application displays outdated menu information.</summary>
+            <p>Refresh the menu or contact the restaurant to confirm current availability and prices.</p>
+        </details>
+
+        <details>
+            <summary>Application keeps disconnecting.</summary>
+            <p>Switch to a more stable internet connection and check whether your order was submitted before trying again.</p>
+        </details>
+    </div>
+</section>
+
+<footer>
+    <h3>SMART DIGITAL SERVICES</h3>
+    <p>Making digital ordering simpler, smarter, and more convenient.</p>
+    <p>© 2026 Smart Digital Services</p>
+</footer>
+
+</body>
+</html>
